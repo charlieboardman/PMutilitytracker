@@ -6,8 +6,8 @@ count = 0
 
 #serialPort.open()
 while True:
-  line =serialPort.readline() 
-  if line:
+    line =serialPort.readline() 
+    if line:
         count = count + 1
     if count == 1:
         print(line)
