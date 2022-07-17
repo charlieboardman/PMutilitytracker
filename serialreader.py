@@ -3,8 +3,10 @@ import serial
 
 
 #port is set to COM5 for my windows PC. When testing on linux laptop or macbook, will need to change this
-serialPort = serial.Serial(port = "COM5", baudrate=9600,
-                           bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
+#serialPort = serial.Serial(port = "COM5", baudrate=9600,bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
+
+#Linux
+serialPort = serial.Serial(port = "/dev/ttyACM0", baudrate=9600, bytesize=8, timeout=2, stopbits=serial.STOPBITS_ONE)
 count = 0
 arr = [[],[]]
 starttime = time.time()
